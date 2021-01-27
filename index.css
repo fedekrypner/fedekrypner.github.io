@@ -12,15 +12,30 @@ p {
 }
 
 .header {
+  display: flex;
   background-color: #fff;
   width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap ;
 }
+.header .menu li a:hover{
+  color: #00f3bb;
+  text-decoration: line-through;
+}
+.header li a:active{ 
+  color: black;
+  opacity: 0.56;
+}
+
 .header ul {
+  width: 100%;
+  display: flex;
   margin: 0;
   padding: 0;
   list-style: none;
   overflow: hidden;
   background-color: #fff;
+  flex-direction: column;
 }
 .header li a {
   font-family: "IBM Plex Mono";
@@ -34,18 +49,9 @@ p {
 .header .menu-btn:hover {
   background-color: #f4f4f4;
 }
-.header .menu li a:hover{
-  color: #00f3bb;
-  text-decoration: line-through;
-}
-.header .menu li a:active{ 
-  color: black;
-  opacity: 0.56;
-}
 
 .header .logo {
-  display: block;
-  float: left;
+  display: inline-block;
   font-size: 2vw;
   padding: 10px 20px;
   text-decoration: none;
@@ -60,8 +66,8 @@ p {
   color: white;
 }
 .header .menu-icon {
+
   cursor: pointer;
-  float: right;
   padding: 28px 20px;
   position: relative;
   user-select: none;
@@ -108,23 +114,34 @@ p {
   top: 0;
 }
 @media (min-width: 48em) {
-  .header li {
-    float: left;
-  }
+  
   .header li a {
     padding: 20px 30px;
   }
+  .header .logo{
+    display: block;
+  }
   .header .menu {
     clear: none;
-    float: right;
     max-height: none;
     background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
   }
   .header .menu a {
     color: black;
   }
   .header .menu-icon {
     display: none;
+  }
+  .header .menu li a:hover{
+    color: #00f3bb;
+    text-decoration: line-through;
+  }
+  .header li a:active{ 
+    color: black;
+    opacity: 0.56;
   }
 }
 h1 {
@@ -163,7 +180,6 @@ h1 {
   outline-color: #3b6d60;
   outline-offset: 80px;
   text-shadow: 1px 1px 6px #dadada;
-  border-shadow: ;
   color: white;
 }
 
@@ -177,8 +193,6 @@ h2 {
   font-family: "IBM Plex Sans";
   font-size: 3vw;
   letter-spacing: 0;
-  margin-left: 6vw;
-  padding: 5vw;
   margin-top: 5vw;
 }
 
@@ -262,7 +276,7 @@ h2 {
 }
 
 .invitados {
-  margin-top: 10vh;
+  margin-top: 30vh;
 }
 
 .fotos {
@@ -275,9 +289,12 @@ h2 {
 .temas {
   z-index: 1;
 }
-
+.temas h2 {
+  padding: 3vw;
+}
 
 .temas .titulos {
+  padding: 5vw;
   font-family: "IBM Plex Sans";
   font-weight: bold;
   font-size: 1.125rem;
@@ -309,7 +326,6 @@ h2 {
 
 .novedades {
   text-align: center;
-  margin-top: 5vw;
   position: relative;
   z-index: 2;
 }
@@ -318,6 +334,7 @@ h2 {
   position: relative;
   z-index: 2;
   color: white;
+  padding: 5vw;
 }
 
 div .i {
@@ -353,7 +370,6 @@ i {
   color: white;
   outline-offset: 80px;
   text-shadow: 1px 1px 6px #dadada;
-  border-shadow: ;
 }
 
 footer {
@@ -362,9 +378,13 @@ footer {
   z-index: 2;
   position: relative;
   background-color: white;
+  justify-content: space-between;
+  align-items: center;
 }
-footer .iconos i {
+footer .iconos {
+  display: flex;
 }
+
 /* For desktop: */
 .col-1 {
   width: 8.33%;
@@ -408,24 +428,29 @@ width: 75%;
   [class*="col-"] {
     width: 100%;
   }
+  .fondo1 {
+    top: -250px;
+  }
   h1 {
     margin-left: 10vw;
     margin-right: 40vw;
-
   }
-  .intro {
-    width: 100%;
+  h2 {
+    font-size: 5vw;
   }
   .botonUno button{
    align-items: center;
    width: 80%;
    font-size: 3vw;
   }
+  .botonDos button {
+  align-items: center;
+   width: 80%;
+   font-size: 3vw;
+  }
   .temas h2 {
     font-size: 5vw;
   }
-
-
   .temas img {
     width: 40%;
     padding: 2vw;
@@ -453,18 +478,23 @@ width: 75%;
   }
 
   .venimosTexto .col-5{
-    width: 90%;
+    width: 80%;
     text-align: center;
-    margin-top: 60vh;
-    margin-right: 5vw;
+    margin-top: 55vw;
   }
-  .venimosTexto a {
-  
-  }
+
   .venimosTexto p {
     align-items: center;
   }
-
+  .invitados {
+    margin-top: 0px;
+  }
+  .novedades h2 {
+    margin-top: 100px;
+    margin-left: 27vw;
+    margin-right: 27vw;
+    letter-spacing: 2px;
+  }
   footer {
     display: flex;
     flex-direction: column;
