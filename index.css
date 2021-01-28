@@ -199,9 +199,15 @@ h2 {
 .episodios {
   color: white;
   margin-top: 11.625rem;
-  z-index: 1;
+  z-index: 2;
   position: relative;
   width: 100%;
+  padding: 5vw;
+  
+}
+.episodios h2 {
+  z-index: 2;
+  position: relative;
 }
 .reproductores {
   z-index: 1;
