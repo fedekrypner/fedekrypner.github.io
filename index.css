@@ -112,6 +112,7 @@
     display: block;
   }
   .header .menu {
+    width: 90%;
     clear: none;
     max-height: none;
     background-color: white;
