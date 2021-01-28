@@ -216,8 +216,8 @@ h2 {
   z-index: 2;
 }
 .reproductores .reproductor iframe {
-  height: 32vh;
-  width: 45vw;
+  height: 30vh;
+  width: 40vw;
   border: none;
 }
 .reproductores {
@@ -277,7 +277,7 @@ h2 {
 }
 
 .invitados {
-  margin-top: 30vh;
+  margin-top: 35vh;
 }
 .invitados h2 {
   padding: 3vw;
@@ -312,7 +312,7 @@ h2 {
 
 .fondo1 {
   position: absolute;
-  top: -150px;
+  top: -200px;
   bottom: 0;
   right: 0;
   left: 0;
@@ -338,7 +338,7 @@ h2 {
   position: relative;
   z-index: 2;
   color: white;
-  padding: 5vw;
+  padding: 2vw;
 }
 
 div .i {
@@ -435,8 +435,13 @@ footer .iconos {
   [class*="col-"] {
     width: 100%;
   }
+
   .fondo1 {
     top: -250px;
+  }
+
+  .header .menu a {
+    font-size: 2vw;
   }
   h1 {
     margin-left: 8vw;
@@ -528,11 +533,12 @@ footer .iconos {
     line-height: 50px;
   }
   .novedades h2 {
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 27vw;
     margin-right: 27vw;
     letter-spacing: 2px;
     font-size: 5vw;
+    padding-bottom: 4vw;
   }
   .botonDos button {
     align-items: center;
