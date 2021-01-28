@@ -211,7 +211,7 @@ h2 {
 .fondo {
   position: absolute;
   top: -280px;
-  bottom: -280px;
+  bottom: -180px;
   margin-top: 200px;
   right: 0;
   left: 0;
@@ -227,23 +227,25 @@ h2 {
   transform: skewY(-5deg);
 }
 
-.reproductor {
-  align-items: center;
-  margin-top: 1.5rem;
-  position: relative;
-  z-index: 2;
+
+.reproductores {
+  margin: 0;
 }
-.reproductor div {
-  display: flex;
-  justify-content: space-evenly;
+.reproductores .reproductor {
+    width: 86.11%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 47.1%);
+    align-content: center;
+    gap: 72px;
+    align-items: center;
+    position: relative;
+    z-index: 2;
 }
-.reproductor .rep1 {
-  padding-top: 4vw;
-}
-.reproductor div iframe {
-  width: 584px;
+.reproductores .reproductor iframe {
   height: 232px;
 }
+
 .col-5 {
   float: right;
 }
@@ -265,14 +267,14 @@ h2 {
 .dondeVenimos {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 13vh;
+  margin-top: 0;
 }
 .dondeVenimosImg {
-  margin-top: 20vh;
   position: absolute;
   z-index: 1;
   margin-left: 12vw;
   width: 40%;
+  margin-top: 5vw;
 }
 
 .invitados {
@@ -463,9 +465,17 @@ width: 75%;
     font-size: 3vw;
   }
 
-  .reproductor div{
+  .reproductores .reproductor {
+    width: 93.75%;
+    margin: auto;
+    display: flex;
     flex-direction: column;
-    align-items: center;
+  }
+  
+  .reproductores .reproductor iframe {
+    margin: 0 0 11px 0;
+    border:0;
+    width: 80%;
   }
   
   .dondeVenimosImg {
@@ -480,9 +490,11 @@ width: 75%;
   .venimosTexto .col-5{
     width: 80%;
     text-align: center;
-    margin-top: 55vw;
+    margin-top: 35vw;
   }
-
+  .venimosTexto h2 {
+    padding: 1vw;
+  }
   .venimosTexto p {
     align-items: center;
   }
