@@ -13,7 +13,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,600;1,500&display=swap" rel="stylesheet">
   </head>
-  <body>
+<body>
         <header class="header">
             <img class="logo" src="landingUI_desktop_mobile_kit/assets/logo.svg" alt="logo" />
             <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -33,18 +33,18 @@
                   </li>
             </ul>
         </header>
-    <main>
     <section>
     <div class="titulo">
-      <h1>Hello <s>world</s> pale blue dot<font color="blue">.</font></h1>
+      <h1>Hello <s>world</s> pale blue dot<span style="color: blue;">.</span></h1>
       <p class="intro">
         El portal de podcasts que explora el mundo de la programación y la
         tecnología. Nuevos episodios, todos los jueves cada 15 días.
       </p>
-      <div class="botonUno">
-          <a href="#conoceMas"><button type="button">CONOCÉ MAS</button></a>
-      </div>
-    </div>    
+      <form class="boton1" action="#conoceMas" method="get">
+        <button>CONOCÉ MAS</button>
+      </form>
+    </div>
+    </section>    
       <section class="reproductores">
         <a name="episodios"><h2 class="episodios">Episodios</h2></a>
     <div class="reproductor">
@@ -114,12 +114,12 @@
           />
           <img
             class="col-4"
-            src="landingUI_desktop_mobile_kit/assets/An E.R.A.Univac 1103 computer in the 1950s.png"
+            src="landingUI_desktop_mobile_kit/assets/computadora1950.png"
             alt="computer in 1950"
           />
           <img
             class="col-4"
-            src="landingUI_desktop_mobile_kit/assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png"
+            src="landingUI_desktop_mobile_kit/assets/computeroperator.png"
             alt="computer operator"
           />
           <img class="col-4" src="landingUI_desktop_mobile_kit/assets/susan-kare.png" alt="susan-kare" />
@@ -157,12 +157,11 @@
       </section>
       <section class="novedades">
           <a name="conoceMas"><h2>¿Queres las ultimas novedades?</h2></a>
-        <div class="botonDos">
-            <a href="#episodios"><button type="button">ESCUCHA LOS EPISODIOS</button></a>
-        </div>
+          <form action="#episodios" method="get">
+            <button>ESCUCHA LOS EPISODIOS</button>
+          </form>
       <div class="fondo1"></div>  
       </section>
-    </main>
     <footer>
       <div class="foot">
         <p>©️ 2019— Hello blue pale dot</p>
@@ -175,5 +174,5 @@
         <a href="https://telegram.org/"><i class="fa fa-telegram" aria-hidden="true"></i></a>
       </div>
     </footer>
-  </body>
+</body>
 </html>
