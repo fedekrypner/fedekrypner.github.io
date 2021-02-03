@@ -267,7 +267,6 @@ h2 {
 .dondeVenimos {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 15vh;
 }
 .dondeVenimosImg {
   position: absolute;
