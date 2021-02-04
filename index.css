@@ -277,7 +277,7 @@ h2 {
 }
 
 .invitados {
-  margin-top: 35vh;
+  margin-top: 25vh;
 }
 .invitados h2 {
   padding: 3vw;
@@ -309,7 +309,10 @@ h2 {
   justify-content: space-evenly;
   flex-direction: row;
 }
-
+.temas .titulos p{
+  font-family: "IBM Plex Sans";
+  font-weight: 600;
+}
 .fondo1 {
   position: absolute;
   top: -200px;
@@ -461,9 +464,10 @@ footer .iconos {
     line-height: 22px;
   }
   .boton1 button {
-    align-items: center;
-    width: 80%;
-    font-size: 3vw;
+    align-content: center;
+    width: 90%;
+    font-size: 1rem;
+    margin-left: 6vw;
   }
   button {
     align-items: center;
@@ -487,7 +491,8 @@ footer .iconos {
   }
 
   .temas .titulos p {
-    font-size: 3vw;
+    font-size: 5vw;
+    margin: 5vw;
   }
   .reproductores h2 {
     font-size: 10vw;
@@ -511,7 +516,7 @@ footer .iconos {
   .dondeVenimosImg {
     width: 70%;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 16vh;
   }
   .venimosTexto {
     margin-top: 350px;
@@ -519,7 +524,7 @@ footer .iconos {
   .venimosTexto .col-5 {
     width: 80%;
     text-align: center;
-    margin-top: 15vw;
+    padding: 5vw;
   }
   .venimosTexto h2 {
     padding-bottom: 5vw;
