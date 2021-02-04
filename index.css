@@ -440,6 +440,7 @@ footer .iconos {
     width: 100%;
   }
 
+
   .fondo1 {
     top: -250px;
   }
@@ -504,19 +505,20 @@ footer .iconos {
     margin: auto;
     display: flex;
     flex-direction: column;
+    padding: 0;
   }
 
   .reproductores .reproductor iframe {
-    margin: 0 0 11px 0;
+    margin: 0 0 5px 0;
     border: 0;
     width: 80%;
-    height: 100%;
   }
 
   .dondeVenimosImg {
-    width: 70%;
+    width: 100%;
     align-items: center;
     margin-top: 16vh;
+    margin-left: 0;
   }
   .venimosTexto {
     margin-top: 350px;
