@@ -512,6 +512,7 @@ footer .iconos {
     margin: 0 0 5px 0;
     border: 0;
     width: 80%;
+    gap: 0px;
   }
 
   .dondeVenimosImg {
