@@ -511,7 +511,7 @@ footer .iconos {
   .reproductores .reproductor iframe {
     margin: 0 0 5px 0;
     border: 0;
-    width: 80%;
+    width: 100%;
     gap: 0px;
   }
 
